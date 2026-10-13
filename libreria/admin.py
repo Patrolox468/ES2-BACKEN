@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import editorial, libro
 
-admin.site.register(editorial)
+
 class editorialAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'direccion', 'telefono')
     search_fields = ('nombre',)
